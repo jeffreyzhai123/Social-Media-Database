@@ -7,7 +7,7 @@ DROP TABLE Sponsors ;
 DROP TABLE HeadOfficesCountries;
 DROP TABLE UserJoins;
 DROP TABLE Communities;
-DROP TABLE ActivitiyIncludesTopics ;
+DROP TABLE ActivityIncludesTopics ;
 DROP TABLE Activities;
 DROP TABLE FavoritedPosts;
 DROP TABLE Comments;
@@ -112,7 +112,7 @@ CREATE TABLE Activities (
                             endDate 		DATE		NOT NULL);
 
 
-CREATE TABLE ActivitiyIncludesTopics (
+CREATE TABLE ActivityIncludesTopics (
                                          topicName 		VARCHAR(255),
                                          activityName 	VARCHAR(255),
                                          PRIMARY KEY (topicName, activityName),
@@ -438,27 +438,27 @@ INTO 		Activities(activityName, description, reward, startDate, endDate)
 VALUES	('Team building', 'Team building exercise', 150, DATE '2024-09-11', DATE '2024-09-17');
 
 
---ActivitiyIncludesTopics  Table
+--ActivityIncludesTopics  Table
 
 INSERT
-INTO		ActivitiyIncludesTopics (topicName, activityName)
+INTO		ActivityIncludesTopics (topicName, activityName)
 VALUES	('CPSC310', 'Midterm Practice');
 
 INSERT
-INTO		ActivitiyIncludesTopics (topicName, activityName)
+INTO		ActivityIncludesTopics (topicName, activityName)
 VALUES	('CPSC320', 'Final Practice');
 
 
 INSERT
-INTO		ActivitiyIncludesTopics (topicName, activityName)
+INTO		ActivityIncludesTopics (topicName, activityName)
 VALUES	('CPSC221', 'Mario Party');
 
 INSERT
-INTO		ActivitiyIncludesTopics (topicName, activityName)
+INTO		ActivityIncludesTopics (topicName, activityName)
 VALUES	('CPSC210', 'Orientation');
 
 INSERT
-INTO		ActivitiyIncludesTopics (topicName, activityName)
+INTO		ActivityIncludesTopics (topicName, activityName)
 VALUES	('CPSC110', 'Team building');
 
 
